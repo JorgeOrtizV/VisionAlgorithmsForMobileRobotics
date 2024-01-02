@@ -99,7 +99,7 @@ def computeDescriptors(blurred_images, keypoint_locations, rotation_invariant):
                         max_orient_idx = np.argmax(orient_hist)
                         Gdir_loc_principal = np.mean(angle_edges[max_orient_idx:max_orient_idx+1])
                         patch_derotated = derotatePatch(curr_img, [row, col], 
-                            16, Gdir_loc_principal);
+                            16, Gdir_loc_principal)
                         Gmag_derot, Gdir_derot = getImageGradient(patch_derotated)
                         Gmag_loc = Gmag_derot
                         Gmag_loc_w = Gmag_derot * gauss_window
@@ -117,7 +117,7 @@ def computeDescriptors(blurred_images, keypoint_locations, rotation_invariant):
             
             # Adapt keypoint location such that they correspond to the
             # originial image dimensions.
-            curr_loc = curr_loc * 2**oct_idx;
+            curr_loc = curr_loc * 2**oct_idx
             # Only store valid keypoints.
             descriptors.append(curr_descriptors[is_valid_keypoint, :])
             final_keypoint_locations.append(curr_loc[is_valid_keypoint,:])

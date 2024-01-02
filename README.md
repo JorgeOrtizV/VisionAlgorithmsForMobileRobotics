@@ -6,3 +6,5 @@ cameraProjection - In this exercise points are projected in the camera plane giv
 cameraCalibration - Implementation of the DLT algorithm
 
 featureDetection - Implements Harris and Shi-Tomasi detectors from scratch. Implements as well a keypoint identificator, a descriptor and a matcher from scratch, able to successfully follow keypoints through a sequence of images.
+
+SIFT - Implements SIFT detector and descriptor from scratch
