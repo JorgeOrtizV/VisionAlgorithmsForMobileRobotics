@@ -8,3 +8,7 @@ cameraCalibration - Implementation of the DLT algorithm
 featureDetection - Implements Harris and Shi-Tomasi detectors from scratch. Implements as well a keypoint identificator, a descriptor and a matcher from scratch, able to successfully follow keypoints through a sequence of images.
 
 SIFT - Implements SIFT detector and descriptor from scratch
+
+stereoRectification - Implements a 3D reconstruction based on sterio rectification of a simplified 2 cameras model.
+
+structureFromMotion - Implements the eight point Algorithm for 3D reconstruction
