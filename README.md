@@ -12,3 +12,5 @@ SIFT - Implements SIFT detector and descriptor from scratch
 stereoRectification - Implements a 3D reconstruction based on sterio rectification of a simplified 2 cameras model.
 
 structureFromMotion - Implements the eight point Algorithm for 3D reconstruction
+
+RANSAC - Implementation of RANSAC outlier removal for keypoints tracking
